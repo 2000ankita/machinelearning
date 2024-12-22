@@ -4,7 +4,7 @@ terraform {
   cloud {
     organization = "test-client" # Replace with your Terraform Cloud organization
     workspaces {
-      name = "brigadeomega" # Hardcoded to match your project_id
+      name = "machinelearning" # Hardcoded to match your project_id
     }
   }
 
