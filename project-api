@@ -1,0 +1,22 @@
+teraform {
+    required_version = ">=1.6.3"
+cloud {
+    organisation = ""
+    workspaces {
+        name = var.project_id
+    }
+}
+required_providers {
+    google = {
+        source = "harshicorp/google"
+        version - ">=5.0, << 6.0"
+    }
+}
+}
+
+provider "google-beta" {
+    project = var.project_id
+    user_project_override = true 
+    billing_project = var.project_id
+     
+}
