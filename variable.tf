@@ -1,7 +1,7 @@
 variable "project_id" {
   description = "The GCP Project ID"
   type        = string
-  default     = ""brigadeomega""
+  default     = "brigadeomega"
 }
 
 variable "account_id" {
